@@ -1,5 +1,5 @@
 # Programming-Studio-2018-Project-2
-AUTHORS
+AUTHORS:
 Batuhan BILGIN
 Artun Burak MECIK
 Volkan OZER
