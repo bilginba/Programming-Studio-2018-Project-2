@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="qrexamreader.GuiController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Accordion prefHeight="768.0" prefWidth="1024.0">
+        <panes>
+          <TitledPane animated="false" text="Set Exam">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="choosePdfPathBtn" disable="true" layoutX="252.0" layoutY="412.0" prefHeight="25.0" prefWidth="160.0" text="Choose Exam Folder">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="choosePdfFileBtn" disable="true" layoutX="252.0" layoutY="380.0" prefHeight="25.0" prefWidth="160.0" text="Choose Exam File">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="chooseDataPathBtn" disable="true" layoutX="252.0" layoutY="456.0" prefHeight="25.0" prefWidth="160.0" text="Save to">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="executeDataBtn" disable="true" layoutX="452.5" layoutY="520.0" prefHeight="25.0" prefWidth="160.0" text="Start">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="newExamButton" layoutX="452.5" layoutY="560.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="New Exam">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <Button fx:id="excelOptionBtn" disable="true" layoutX="452.5" layoutY="600.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="160.0" text="Results in Excel">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                        <TextField fx:id="pdfFilePathText" alignment="CENTER" editable="false" layoutX="420.0" layoutY="396" prefHeight="25.0" prefWidth="346.0" />
+                        <ImageView fx:id="logoImage" fitHeight="319.0" fitWidth="466.0" layoutX="279.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@logo.png" />
+                           </image></ImageView>
+                        <TextField fx:id="saveToPathText" alignment="CENTER" editable="false" layoutX="420.0" layoutY="456.0" prefHeight="25.0" prefWidth="348.0" />
+                        
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="menuGradePane" animated="false" disable="true" text="Grade Exam">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fx:id="questionImage" fitHeight="430.0" fitWidth="920.0" pickOnBounds="true" preserveRatio="true" />
+                        <TextArea fx:id="questionCommentText" layoutX="390.0" layoutY="497.0" prefHeight="121.0" prefWidth="365.0" promptText="Leave your comments here...." />
+                        <Text layoutX="56.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Name : " />
+                        <Text layoutX="56.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student ID : " />
+                        <Text layoutX="56.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question : " />
+                        <Text layoutX="56.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Grade : " />
+                        <Text layoutX="56.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current Grade:" />
+                        <Text fx:id="studentNameText" layoutX="170.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text fx:id="studentIDText" layoutX="170.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text fx:id="questionText" layoutX="170.0" layoutY="570.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text fx:id="sumOfGradeText" layoutX="170.0" layoutY="600.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text fx:id="questPointText" layoutX="170.0" layoutY="630.0" strokeType="OUTSIDE" strokeWidth="0.0" text="" />
+                        <Text layoutX="821.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Question Grade" textAlignment="CENTER" wrappingWidth="150" />
+                        <TextField fx:id="maxGradePromptText" layoutX="821.0" layoutY="553.0" promptText="" />
+                        <Button fx:id="nextBtn" layoutX="895.0" layoutY="591.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Next">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                        <Button fx:id="prevBtn" layoutX="820.0" layoutY="591.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Previous">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children></AnchorPane>
+            </content>
+          </TitledPane>
+          <TitledPane fx:id="menuGraphPane" animated="false" disable="true" text="Graph">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BarChart fx:id="gradeGraph" layoutX="30.0" layoutY="25.0" prefHeight="650.0" prefWidth="720.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" fx:id="xLine" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="yLine" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <TextArea fx:id="studentsGrades" editable="false" layoutX="750.0" layoutY="25.0" prefHeight="650.0" prefWidth="250.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </TitledPane>
+        </panes>
+      </Accordion>
+    </children>
+</AnchorPane>

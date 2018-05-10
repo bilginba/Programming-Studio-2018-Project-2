@@ -1,0 +1,5 @@
+2
+2
+0
+{Muhammed Kostekli=0, Uluc Furkan Vardar=0, Ilkay Tevfik Devran=8}
+[8, 12]
