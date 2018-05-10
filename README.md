@@ -1,2 +1,5 @@
 # Programming-Studio-2018-Project-2
-QR Based Exam Grading Tool
+AUTHORS
+Batuhan BILGIN
+Artun Burak MECIK
+Volkan OZER
